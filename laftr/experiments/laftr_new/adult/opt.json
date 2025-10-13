@@ -1,0 +1,55 @@
+{
+    "data": {
+        "attr0_name": "Male",
+        "attr1_name": "Female",
+        "biased": false,
+        "even": false,
+        "name": "adult",
+        "seed": 2,
+        "use_attr": true
+    },
+    "dirs": {
+        "data_dir": "./data",
+        "exp_dir": "./experiments",
+        "log_dir": "./tfboard_logs",
+        "repr_dir": "./experiments"
+    },
+    "exp_name": "laftr_new/adult",
+    "model": {
+        "adim": 1,
+        "class": "WeightedDemParWassGan",
+        "class_coeff": 1.0,
+        "fair_coeff": 1.0,
+        "gp": 10.0,
+        "hidden_layer_specs": {
+            "aud": [
+                8
+            ],
+            "cla": [
+                8
+            ],
+            "enc": [
+                8
+            ],
+            "rec": [
+                8
+            ]
+        },
+        "hinge": 0.0,
+        "recon_coeff": 0.0,
+        "seed": 0,
+        "xdim": 120,
+        "ydim": 1,
+        "zdim": 8
+    },
+    "optim": {
+        "learning_rate": 0.001
+    },
+    "train": {
+        "aud_steps": 1,
+        "batch_size": 64,
+        "n_epochs": 1000,
+        "patience": 1000,
+        "regbas": false
+    }
+}
