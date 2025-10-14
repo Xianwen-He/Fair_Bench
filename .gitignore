@@ -1,0 +1,7 @@
+# Ignore generated README output from Quarto/HTML exports
+README.html
+README_files/
+
+# Common Python artifacts (optional)
+# __pycache__/
+# *.py[cod]
